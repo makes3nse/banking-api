@@ -1,0 +1,15 @@
+[
+  {
+    "transactionId": "ZawWJiKP4TEhRaV",
+    "currency": "USD",
+    "amount": "500000.00",
+    "sourceAccount": "070457206771426",
+    "targetAccount": "070457206771426",
+    "transactionType": "DEPOSIT",
+    "transactionStatus": "COMPLETED",
+    "createdAt": "2026-07-25T05:32:33.420946100",
+    "completedAt": "2026-07-25T05:32:33.443514",
+    "returnReason": null,
+    "rejectReason": null
+  }
+]

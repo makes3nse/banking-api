@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: banking-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: banking
+      POSTGRES_PASSWORD: banking123
+      POSTGRES_DB: banking_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - banking_pgdata:/var/lib/postgresql/data
+      - ./src/main/resources/migration.sql:/docker-entrypoint-initdb.d/01_migration.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U banking -d banking_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  banking_pgdata:

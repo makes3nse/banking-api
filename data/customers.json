@@ -1,0 +1,13 @@
+[
+  {
+    "id": "532102678899731",
+    "role": "CUSTOMER",
+    "customerStatus": "ACTIVE",
+    "name": "tony",
+    "email": "123@123.123",
+    "phoneNumber": "123123123",
+    "password": "$2a$10$Uq6/J6VGhkrXWiP27oAn4OEWugw62pEb7Kpy9f2vLJD8sh/C147CG",
+    "createdAt": "2026-07-25T05:31:22.838941600",
+    "updatedAt": "2026-07-25T05:31:22.838941600"
+  }
+]
